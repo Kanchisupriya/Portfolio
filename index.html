@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kanchi Supriya - Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="logo">Portfolio</div>
+                
+                <!-- Desktop Menu -->
+                <div class="nav-menu">
+                    <a href="#home" class="nav-link active" data-section="home">Home</a>
+                    <a href="#about" class="nav-link" data-section="about">About</a>
+                    <a href="#skills" class="nav-link" data-section="skills">Skills</a>
+                    <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+                    <a href="#contact" class="nav-link" data-section="contact">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div class="mobile-menu" id="mobileMenu">
+                <a href="#home" class="mobile-nav-link" data-section="home">Home</a>
+                <a href="#about" class="mobile-nav-link" data-section="about">About</a>
+                <a href="#skills" class="mobile-nav-link" data-section="skills">Skills</a>
+                <a href="#projects" class="mobile-nav-link" data-section="projects">Projects</a>
+                <a href="#contact" class="mobile-nav-link" data-section="contact">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="floating-shapes">
+            <div class="shape shape-1"></div>
+            <div class="shape shape-2"></div>
+            <div class="shape shape-3"></div>
+        </div>
+        
+        <div class="hero-content">
+            <h1 class="hero-title">Kanchi Supriya</h1>
+            <h2 class="hero-subtitle">Fullstack Developer</h2>
+            <p class="hero-description">
+                Creating beautiful, responsive web experiences with modern technologies. 
+                Passionate about creating intuitive user interfaces that delight and engage.
+            </p>
+            
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                    Get In Touch
+                </button>
+                <button class="btn btn-secondary" onclick="scrollToSection('projects')">
+                    View My Work
+                </button>
+            </div>
+            
+            <div class="social-links">
+                <a href="https://github.com/Kanchisupriya" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-github"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/supriya-kanchi-73b1012a1/" target="_blank" rel="noopener noreferrer" class="social-link">
+                    <i class="fab fa-linkedin"></i>
+                </a>
+                <a href="mailto:kanchisupriya22@gmail.com" class="social-link">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+        
+        <button class="scroll-indicator" onclick="scrollToSection('about')">
+            <i class="fas fa-chevron-down"></i>
+        </button>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">About Me</h2>
+            
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="https://aicdn.picsart.com/d159e5f8-c873-44a8-a1f6-046739168a12.jpg" alt="Kanchi Supriya" class="profile-image">
+                    <div class="image-decoration"></div>
+                </div>
+                
+                <div class="about-text">
+                    <h3 class="about-heading">Passionate Fullstack Developer</h3>
+                    <p class="about-paragraph">
+                        Computer Science and Engineering Student with a specialization in Cybersecurity. Currently pursuing my B.Tech at Swarnandhra College of Engineering and Technology. My academic and project experiences span the full stack, from designing user-friendly interfaces to developing robust back-end systems.
+                    </p>
+                    <p class="about-paragraph">
+                        This portfolio showcases my technical skills, academic achievements, and projects that demonstrate my ability in building secure and efficient systems.
+                    </p>
+                    
+                    <div class="tech-tags">
+                        <span class="tech-tag">React</span>
+                        <span class="tech-tag">HTML5</span>
+                        <span class="tech-tag">CSS</span>
+                        <span class="tech-tag">JavaScript</span>
+                        <span class="tech-tag">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="scroll-indicator" onclick="scrollToSection('skills')">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills-section">
+        <div class="floating-shapes">
+            <div class="shape shape-4"></div>
+            <div class="shape shape-5"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">My Skills</h2>
+            
+            <div class="skills-container">
+                <div class="skill-item" style="animation-delay: 0s">
+                    <div class="skill-header">
+                        <span class="skill-name">React.js</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item" style="animation-delay: 0.1s">
+                    <div class="skill-header">
+                        <span class="skill-name">CSS</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item" style="animation-delay: 0.2s">
+                    <div class="skill-header">
+                        <span class="skill-name">JavaScript</span>
+                        <span class="skill-percentage">92%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="92"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item" style="animation-delay: 0.3s">
+                    <div class="skill-header">
+                        <span class="skill-name">HTML5</span>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="95"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item" style="animation-delay: 0.4s">
+                    <div class="skill-header">
+                        <span class="skill-name">UI/UX Design</span>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="85"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item" style="animation-delay: 0.5s">
+                    <div class="skill-header">
+                        <span class="skill-name">Node.js</span>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="80"></div>
+                    </div>
+                </div>
+                
+                <div class="skill-item" style="animation-delay: 0.6s">
+                    <div class="skill-header">
+                        <span class="skill-name">Git & Version Control</span>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-bar">
+                        <div class="skill-progress" data-width="88"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="scroll-indicator" onclick="scrollToSection('projects')">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Featured Projects</h2>
+            
+            <!-- Projects Grid -->
+            <div class="projects-grid">
+                <!-- E-Commerce Platform -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/34577/pexels-photo.jpg?auto=compress&cs=tinysrgb&w=600" alt="E-Commerce Platform">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://kanchisupriya.github.io/Ecommerce-web-Application/" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Kanchisupriya" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">E-Commerce Platform</h3>
+                        <p class="project-description">
+                            A full-stack e-commerce solution built with React, Node.js, and MongoDB. Features include user authentication, payment integration, and real-time inventory management.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">Node.js</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                            <span class="project-tag">JS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Wikipedia Search Application -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/3184454/pexels-photo-3184454.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Wikipedia Search Application">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="#" class="project-link">
+                                    <i class="fas fa-external-link-alt"></i>
+                                </a>
+                                <a href="https://github.com/Kanchisupriya" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">Wikipedia Search Application</h3>
+                        <p class="project-description">
+                            Unlock the vast wealth of knowledge on Wikipedia with a custom search application that delivers relevant and curated results. Quick and easy access to information has never been easier.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">JS</span>
+                            <span class="project-tag">APIs</span>
+                            <span class="project-tag">HTML</span>
+                            <span class="project-tag">CSS</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Coming Soon Project -->
+                <div class="project-card">
+                    <div class="project-image">
+                        <img src="https://images.pexels.com/photos/574071/pexels-photo-574071.jpeg?auto=compress&cs=tinysrgb&w=600" alt="Coming Soon Project">
+                        <div class="project-overlay">
+                            <div class="project-links">
+                                <a href="https://github.com/Kanchisupriya" target="_blank" rel="noopener noreferrer" class="project-link">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3 class="project-title">More Projects Coming Soon</h3>
+                        <p class="project-description">
+                            Currently working on exciting new projects that showcase advanced web development techniques and modern frameworks.
+                        </p>
+                        <div class="project-tags">
+                            <span class="project-tag">React</span>
+                            <span class="project-tag">TypeScript</span>
+                            <span class="project-tag">Next.js</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <button class="scroll-indicator" onclick="scrollToSection('contact')">
+                <i class="fas fa-chevron-down"></i>
+            </button>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="floating-shapes">
+            <div class="shape shape-6"></div>
+            <div class="shape shape-7"></div>
+        </div>
+        
+        <div class="container">
+            <h2 class="section-title">Let's Work Together</h2>
+            
+            <div class="contact-content">
+                <!-- Contact Form -->
+                <div class="contact-form-container">
+                    <div class="contact-form-card">
+                        <h3 class="contact-form-title">Send Me a Message</h3>
+                        <form id="contactForm" class="contact-form">
+                            <div class="form-row">
+                                <input type="text" placeholder="Your Name" required class="form-input">
+                                <input type="email" placeholder="Your Email" required class="form-input">
+                            </div>
+                            <input type="text" placeholder="Subject" required class="form-input">
+                            <textarea placeholder="Your Message" rows="6" required class="form-textarea"></textarea>
+                            <button type="submit" class="form-submit">
+                                <i class="fas fa-paper-plane"></i>
+                                Send Message
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <div class="contact-info-card">
+                        <h3 class="contact-info-title">Get In Touch</h3>
+                        <p class="contact-info-description">
+                            I'm always interested in new opportunities and exciting projects. Let's discuss how we can work together to bring your ideas to life.
+                        </p>
+                        
+                        <div class="contact-details">
+                            <a href="mailto:kanchisupriya22@gmail.com" class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p class="contact-label">Email</p>
+                                    <p class="contact-value">kanchisupriya22@gmail.com</p>
+                                </div>
+                            </a>
+                            
+                            <a href="tel:+919652245452" class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p class="contact-label">Phone</p>
+                                    <p class="contact-value">+91 9652245452</p>
+                                </div>
+                            </a>
+                            
+                            <div class="contact-detail">
+                                <div class="contact-icon">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-text">
+                                    <p class="contact-label">Location</p>
+                                    <p class="contact-value">Tatipaka, Andhra Pradesh</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="social-section">
+                            <p class="social-text">Follow me on social media</p>
+                            <div class="social-links-small">
+                                <a href="https://github.com/Kanchisupriya" target="_blank" rel="noopener noreferrer" class="social-link-small">
+                                    <i class="fab fa-github"></i>
+                                </a>
+                                <a href="https://www.linkedin.com/in/supriya-kanchi-73b1012a1/" target="_blank" rel="noopener noreferrer" class="social-link-small">
+                                    <i class="fab fa-linkedin"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <button class="back-to-top" onclick="scrollToTop()">
+                <i class="fas fa-chevron-up"></i>
+            </button>
+            
+            <h3 class="footer-title">Kanchi Supriya</h3>
+            <p class="footer-description">
+                Full-Stack Developer passionate about creating beautiful, 
+                functional web experiences that make a difference.
+            </p>
+            
+            <div class="footer-love">
+                <span>Made with</span>
+                <span class="heart">♥</span>
+                <span>and lots of coffee</span>
+            </div>
+            
+            <div class="footer-copyright">
+                <p>&copy; 2025 Kanchi Supriya. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
