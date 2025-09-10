@@ -367,7 +367,7 @@ body {
 
 .profile-image {
     width: 100%;
-    border-radius: 24px;
+    border-radius: 100%;
     box-shadow: 0 25px 50px rgba(0, 0, 0, 0.15);
 }
 
@@ -970,4 +970,5 @@ body {
 
 .active {
     color: #3b82f6 !important;
+
 }
